@@ -262,3 +262,25 @@ kbd{font-family:'IBM Plex Mono',monospace;background:#fff;border:1px solid var(-
 input[type=text].invalid{border-color:#D64545;box-shadow:0 0 0 4px rgba(214,69,69,.15)}
 .shake{animation:shake .45s}
 @keyframes shake{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+
+/* ===== fix responsive: la ilustración nunca se sale de su caja ===== */
+.qimg{position:relative;overflow:hidden;display:block;padding:0}
+.qimg img{position:absolute;inset:14px;width:calc(100% - 28px);height:calc(100% - 28px);max-height:none;object-fit:contain}
+@media (max-width:700px){
+  .qimg{aspect-ratio:auto;height:clamp(150px,42vw,200px);padding:0}
+  .qimg img{inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}
+  .qsplit{gap:14px;margin-bottom:16px}
+  .qtext{font-size:1.25rem}
+  .quiz-wrap{margin:20px auto 40px}
+  .qcard{padding:18px;margin:16px 0}
+  .likert{gap:6px}
+  .lk{min-width:0}
+  .lk span{word-break:break-word}
+  .opts{grid-template-columns:1fr 1fr}
+  .opt.fig{min-height:84px}
+  .figs .f{width:64px;height:64px}
+  .figs .f svg{width:46px;height:46px}
+}
+@media (max-width:360px){.lk{font-size:.62rem}.lk b{font-size:1.3rem}}
+.lk span{word-break:normal;overflow-wrap:normal;white-space:normal;hyphens:none}
+@media (max-width:400px){.lk{font-size:.6rem;padding:9px 1px}.lk b{font-size:1.35rem}.likert{gap:5px}}
