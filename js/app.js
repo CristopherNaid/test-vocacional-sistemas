@@ -44,12 +44,21 @@
   /* ---------- registro ---------- */
   $('#regForm').addEventListener('submit', e => {
     e.preventDefault();
-    const n = $('#name').value.trim();
-    if (!n) return $('#name').focus();
-    Object.assign(state, { name: n, step: 0, int: Array(NI).fill(null), ret: Array(NR).fill(null), done: false, t0: Date.now() });
+    const v = validarNombre($('#name').value);
+    if (!v.ok) { nameError(v.msg); return; }
+    $('#name').value = v.nombre;
+    Object.assign(state, { name: v.nombre, step: 0, int: Array(NI).fill(null), ret: Array(NR).fill(null), done: false, t0: Date.now() });
     save();
     show('quiz'); render();
   });
+
+  function nameError(msg) {
+    const inp = $('#name'), err = $('#nameErr');
+    err.textContent = msg; inp.classList.add('invalid');
+    inp.classList.remove('shake'); void inp.offsetWidth; inp.classList.add('shake');
+    inp.focus(); inp.select();
+  }
+  $('#name').addEventListener('input', () => { $('#nameErr').textContent = ''; $('#name').classList.remove('invalid'); });
 
   /* ---------- preguntas ---------- */
   const isInt = () => state.step < NI;
@@ -286,7 +295,7 @@
   /* ---------- retomar avance ---------- */
   try {
     const saved = JSON.parse(localStorage.getItem(STORE) || 'null');
-    if (saved && saved.name && !saved.done && saved.int?.length === NI && saved.ret?.length === NR &&
+    if (saved && saved.name && validarNombre(saved.name).ok && !saved.done && saved.int?.length === NI && saved.ret?.length === NR &&
         confirm(`Hola ${saved.name}, dejaste el test a medias. ¿Quieres continuarlo?`)) {
       Object.assign(state, saved);
       show('quiz'); render();
