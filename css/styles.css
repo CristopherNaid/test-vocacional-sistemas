@@ -258,3 +258,7 @@ kbd{font-family:'IBM Plex Mono',monospace;background:#fff;border:1px solid var(-
 .lk:hover b,.lk.sel b{transform:scale(1.18)}
 .qcard{min-height:0}
 @media (max-width:700px){.qsplit{grid-template-columns:1fr}.lk{font-size:.7rem;padding:10px 2px}.lk b{font-size:1.5rem}}
+.field-error{color:#C03636;font-weight:600;font-size:.92rem;min-height:1.3em;margin-top:8px}
+input[type=text].invalid{border-color:#D64545;box-shadow:0 0 0 4px rgba(214,69,69,.15)}
+.shake{animation:shake .45s}
+@keyframes shake{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
