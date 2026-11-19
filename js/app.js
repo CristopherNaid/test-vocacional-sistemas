@@ -230,7 +230,7 @@
       </div>
 
       <div class="box cta-final">
-        <img src="img/graduacion.png" alt="" />
+        <img src="img/graduacion.png?v=2" alt="" />
         <div><h3>¿Te animas a ser ingeniero en sistemas?</h3>
         <p class="muted">Puedes ingresar a la FICCT – UAGRM por la PSA (examen de admisión) o por el CUP (curso preuniversitario). Prepárate en matemática, computación, física e inglés.</p></div>
       </div>`;

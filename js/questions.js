@@ -18,20 +18,20 @@ const polygon = (n) => {
 };
 
 const INTERESTS = [
-  { r: 'dev', img: 'img/desarrollo-software.png', q: '¿Te gustaría aprender a programar y crear tus propias aplicaciones?' },
-  { r: 'datos', img: 'img/inteligencia-artificial.png', q: '¿Te llama la atención la inteligencia artificial, como ChatGPT o los robots?' },
-  { r: 'gestion', img: 'img/emprendimiento.png', q: '¿Te gustaría tener tu propio negocio o emprendimiento digital?' },
-  { r: 'infra', img: 'img/ciberseguridad.png', q: '¿Te gustaría ser un “hacker ético” y proteger sistemas de ataques?' },
-  { r: 'dev', img: 'img/ingeniero-sistemas.png', q: '¿Te imaginas creando un videojuego o una página web?' },
-  { r: 'gestion', img: 'img/gestion-proyectos.png', q: '¿Te gustaría ganar buen dinero trabajando en tecnología, incluso desde tu casa?' },
-  { r: 'datos', img: 'img/datos-bi.png', q: '¿Te gustan las matemáticas y trabajar con números?' },
-  { r: 'infra', img: 'img/redes-nube.png', q: '¿Te da curiosidad saber cómo funcionan el internet y el WiFi?' },
-  { r: 'dev', img: 'img/analisis-sistemas.png', q: '¿Disfrutas resolver acertijos o problemas de lógica?' },
-  { r: 'infra', img: 'img/antes-de-entrar.png', q: '¿Te gusta armar, configurar o arreglar computadoras y celulares?' },
-  { r: 'datos', img: 'img/datos-bi.png', q: '¿Te gustaría analizar datos para descubrir cosas, como qué productos se venden más?' },
-  { r: 'gestion', img: 'img/gestion-proyectos.png', q: '¿Te gusta organizar y liderar a tu grupo en los trabajos del colegio?' },
-  { r: 'dev', img: 'img/ingreso.png', q: '¿Usas tu computadora o celular para aprender cosas nuevas por tu cuenta?' },
-  { r: 'gestion', img: 'img/graduacion.png', q: '¿Te gustaría trabajar algún día para empresas de otros países?' },
+  { r: 'dev', img: 'img/desarrollo-software.png?v=2', q: '¿Te gustaría aprender a programar y crear tus propias aplicaciones?' },
+  { r: 'datos', img: 'img/inteligencia-artificial.png?v=2', q: '¿Te llama la atención la inteligencia artificial, como ChatGPT o los robots?' },
+  { r: 'gestion', img: 'img/emprendimiento.png?v=2', q: '¿Te gustaría tener tu propio negocio o emprendimiento digital?' },
+  { r: 'infra', img: 'img/ciberseguridad.png?v=2', q: '¿Te gustaría ser un “hacker ético” y proteger sistemas de ataques?' },
+  { r: 'dev', img: 'img/ingeniero-sistemas.png?v=2', q: '¿Te imaginas creando un videojuego o una página web?' },
+  { r: 'gestion', img: 'img/gestion-proyectos.png?v=2', q: '¿Te gustaría ganar buen dinero trabajando en tecnología, incluso desde tu casa?' },
+  { r: 'datos', img: 'img/datos-bi.png?v=2', q: '¿Te gustan las matemáticas y trabajar con números?' },
+  { r: 'infra', img: 'img/redes-nube.png?v=2', q: '¿Te da curiosidad saber cómo funcionan el internet y el WiFi?' },
+  { r: 'dev', img: 'img/analisis-sistemas.png?v=2', q: '¿Disfrutas resolver acertijos o problemas de lógica?' },
+  { r: 'infra', img: 'img/antes-de-entrar.png?v=2', q: '¿Te gusta armar, configurar o arreglar computadoras y celulares?' },
+  { r: 'datos', img: 'img/datos-bi.png?v=2', q: '¿Te gustaría analizar datos para descubrir cosas, como qué productos se venden más?' },
+  { r: 'gestion', img: 'img/gestion-proyectos.png?v=2', q: '¿Te gusta organizar y liderar a tu grupo en los trabajos del colegio?' },
+  { r: 'dev', img: 'img/ingreso.png?v=2', q: '¿Usas tu computadora o celular para aprender cosas nuevas por tu cuenta?' },
+  { r: 'gestion', img: 'img/graduacion.png?v=2', q: '¿Te gustaría trabajar algún día para empresas de otros países?' },
 ];
 
 const RETOS = [
@@ -51,19 +51,19 @@ const RETOS = [
 ];
 
 const RAMAS = {
-  dev: { name: 'Desarrollo de software', img: 'img/desarrollo-software.png', color: '#5DB82E', emoji: '💻',
+  dev: { name: 'Desarrollo de software', img: 'img/desarrollo-software.png?v=2', color: '#5DB82E', emoji: '💻',
     desc: 'Te gusta crear cosas que la gente usa. Aprenderás a programar aplicaciones web, móviles y videojuegos.',
     materias: ['Introducción a la Programación', 'Programación Web', 'Programación Móvil', 'Ingeniería de Software'],
     puestos: ['Desarrollador de apps', 'Desarrollador web', 'Programador de videojuegos', 'Full-stack'] },
-  datos: { name: 'Datos e inteligencia artificial', img: 'img/inteligencia-artificial.png', color: '#2F80ED', emoji: '🤖',
+  datos: { name: 'Datos e inteligencia artificial', img: 'img/inteligencia-artificial.png?v=2', color: '#2F80ED', emoji: '🤖',
     desc: 'Te atraen los números y la IA. Aprenderás a usar datos para tomar decisiones y a entrenar modelos inteligentes.',
     materias: ['Base de Datos', 'Probabilidad y Estadística', 'Inteligencia Artificial', 'Machine Learning'],
     puestos: ['Analista de datos', 'Científico de datos', 'Ingeniero de IA', 'Especialista en BI'] },
-  infra: { name: 'Redes y ciberseguridad', img: 'img/ciberseguridad.png', color: '#F2994A', emoji: '🔐',
+  infra: { name: 'Redes y ciberseguridad', img: 'img/ciberseguridad.png?v=2', color: '#F2994A', emoji: '🔐',
     desc: 'Te interesa cómo funciona todo por dentro. Aprenderás de redes, servidores, la nube y cómo proteger sistemas.',
     materias: ['Redes', 'Sistemas Operativos', 'Computación en la Nube', 'Seguridad de la Información'],
     puestos: ['Administrador de redes', 'Hacker ético', 'Ingeniero cloud', 'Auditor de sistemas'] },
-  gestion: { name: 'Gestión y emprendimiento', img: 'img/emprendimiento.png', color: '#9B51E0', emoji: '🚀',
+  gestion: { name: 'Gestión y emprendimiento', img: 'img/emprendimiento.png?v=2', color: '#9B51E0', emoji: '🚀',
     desc: 'Tienes perfil de líder. Combinarás la tecnología con negocios, proyectos y emprendimiento.',
     materias: ['Fundamentos Económicos', 'Marketing Digital', 'Evaluación de Proyectos', 'Plan de Negocios'],
     puestos: ['Jefe de proyectos TI', 'Fundador de startup', 'Consultor tecnológico', 'Freelancer'] },
