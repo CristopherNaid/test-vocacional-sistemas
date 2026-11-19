@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Vocacional · Ingeniería en Sistemas FICCT – UAGRM</title>
+  <meta name="description" content="Test vocacional gratis para bachilleres: 20 preguntas rápidas para saber si Ingeniería en Sistemas es para ti y qué rama de la carrera va contigo." />
+  <meta name="theme-color" content="#0A2558" />
+  <meta property="og:title" content="¿Ingeniería en Sistemas es para ti? · Test vocacional" />
+  <meta property="og:description" content="20 preguntas, 5 minutos. Descubre tu compatibilidad con la carrera y tu rama ideal." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" data-go="home">
+      <img src="img/logo.png" alt="Logo de Ingeniería en Sistemas" width="40" height="40" />
+      <span><strong>Test Vocacional</strong><small>Ingeniería en Sistemas · FICCT – UAGRM</small></span>
+    </a>
+    <button class="btn btn-primary btn-sm" data-go="register">Hacer el test</button>
+  </header>
+
+  <main>
+    <!-- ================= INICIO ================= -->
+    <section class="screen active" id="home">
+      <div class="hero">
+        <div class="hero-text reveal">
+          <span class="pill">🎓 Para bachilleres · 20 preguntas · 5 minutos</span>
+          <h1>¿Ingeniería en Sistemas <span class="hl">es para ti?</span></h1>
+          <p class="lead">Responde 20 preguntas rápidas sobre lo que te gusta y unos mini retos fáciles. Al final sabrás qué tan compatible eres con la carrera y qué rama va más contigo.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary btn-lg" data-go="register">Empezar el test <span aria-hidden="true">→</span></button>
+            <a class="btn btn-ghost btn-lg" href="#como">¿Cómo funciona?</a>
+          </div>
+          <ul class="stats">
+            <li><strong>20</strong><span>preguntas</span></li>
+            <li><strong>5</strong><span>minutos</span></li>
+            <li><strong>100%</strong><span>gratis</span></li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" style="--d:.15s">
+          <div class="blob"></div>
+          <img src="img/ingeniero-sistemas.png" alt="Ilustración de un joven programando" class="float" />
+          <div class="chip chip-a">💻 Programar</div>
+          <div class="chip chip-b">🤖 IA</div>
+          <div class="chip chip-c">🚀 Emprender</div>
+        </div>
+      </div>
+
+      <div class="section" id="como">
+        <h2 class="reveal">¿Cómo funciona?</h2>
+        <div class="steps">
+          <article class="step reveal" style="--d:0s"><span class="num">1</span><div class="ico">💡</div><h3>Tus gustos</h3><p>14 preguntas como “¿te gustaría programar?” o “¿te gustaría tener tu propio negocio?”. No hay respuestas buenas ni malas.</p></article>
+          <article class="step reveal" style="--d:.1s"><span class="num">2</span><div class="ico">🧩</div><h3>Mini retos</h3><p>6 retos fáciles de números, lógica, figuras y palabras. Sin presión de tiempo.</p></article>
+          <article class="step reveal" style="--d:.2s"><span class="num">3</span><div class="ico">🎯</div><h3>Tu resultado</h3><p>Tu porcentaje de compatibilidad con la carrera, tu rama ideal y en qué podrías trabajar.</p></article>
+        </div>
+
+        <h2 class="reveal">Las 4 ramas que puedes descubrir</h2>
+        <div class="ramas">
+          <article class="rama reveal" style="--d:0s"><img src="img/desarrollo-software.png" alt="" loading="lazy" /><h3>💻 Desarrollo de software</h3><p>Apps, páginas web y videojuegos.</p></article>
+          <article class="rama reveal" style="--d:.08s"><img src="img/inteligencia-artificial.png" alt="" loading="lazy" /><h3>🤖 Datos e IA</h3><p>Inteligencia artificial y análisis de datos.</p></article>
+          <article class="rama reveal" style="--d:.16s"><img src="img/ciberseguridad.png" alt="" loading="lazy" /><h3>🔐 Redes y ciberseguridad</h3><p>Internet, la nube y hackers éticos.</p></article>
+          <article class="rama reveal" style="--d:.24s"><img src="img/emprendimiento.png" alt="" loading="lazy" /><h3>🚀 Gestión y emprendimiento</h3><p>Negocios digitales y liderazgo de proyectos.</p></article>
+        </div>
+        <div class="banner reveal">
+          <div><h2>¿Listo para descubrirlo?</h2><p>Solo te toma 5 minutos y es totalmente gratis.</p></div>
+          <button class="btn btn-primary btn-lg" data-go="register">Hacer el test ahora 🚀</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REGISTRO ================= -->
+    <section class="screen" id="register">
+      <div class="panel narrow">
+        <img src="img/ingreso.png" alt="" class="panel-art" />
+        <h2>¡Hola! Antes de empezar</h2>
+        <p class="muted">Tu nombre solo se usa para mostrar tu resultado. No se guarda en ningún servidor.</p>
+        <form id="regForm" autocomplete="off">
+          <label for="name">¿Cómo te llamas?</label>
+          <input id="name" type="text" maxlength="40" placeholder="Escribe tu nombre" required />
+          <div class="rules">
+            <div><span>😊</span><p>Responde con <strong>sinceridad</strong>: lo importante es lo que a ti te gusta.</p></div>
+            <div><span>⚡</span><p>Al elegir una respuesta pasas solo a la siguiente pregunta. Puedes volver atrás si te equivocas.</p></div>
+            <div><span>⏱</span><p>No hay límite de tiempo. Te tomará unos 5 minutos.</p></div>
+          </div>
+          <button class="btn btn-primary btn-lg full" type="submit">¡Empezar!</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= TEST ================= -->
+    <section class="screen" id="quiz">
+      <div class="quiz-wrap">
+        <div class="quiz-head">
+          <div class="phase" id="phaseLabel">Parte 1 · Tus gustos</div>
+          <div class="count" id="countLabel">1 / 20</div>
+        </div>
+        <div class="progress"><div class="bar" id="progressBar"></div></div>
+        <div class="qcard" id="qcard"></div>
+        <div class="quiz-nav">
+          <button class="btn btn-ghost" id="prevBtn">← Anterior</button>
+          <button class="btn btn-primary" id="nextBtn" disabled>Siguiente →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRANSICIÓN ================= -->
+    <section class="screen" id="interlude">
+      <div class="panel narrow center">
+        <img src="img/antes-de-entrar.png" alt="" class="panel-art" />
+        <h2>¡Vas muy bien! 🎉</h2>
+        <p class="muted">Ya terminaste la parte de gustos. Ahora vienen <strong>6 mini retos</strong> fáciles. Tómalo con calma, no hay tiempo límite.</p>
+        <button class="btn btn-primary btn-lg" id="startRetos">Ir a los retos 🧩</button>
+      </div>
+    </section>
+
+    <!-- ================= RESULTADOS ================= -->
+    <section class="screen" id="results">
+      <div class="results" id="resultsBox"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Test orientativo con fines informativos. No reemplaza la orientación de un profesional ni la PSA oficial.</p>
+    <p>Ingeniería en Sistemas · FICCT – UAGRM · Santa Cruz de la Sierra</p>
+  </footer>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
